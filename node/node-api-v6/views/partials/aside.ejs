@@ -1,0 +1,11 @@
+<aside class="aside">
+    <ul class="genre-list list-group list-group-flush">
+        <% data.forEach(item => { %>
+            <li class="list-item">
+                <a href="/genre/<%= item.genre_id %>">
+                    <%= item.genre %>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
+</aside>
